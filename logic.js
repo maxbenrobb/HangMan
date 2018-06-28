@@ -16,5 +16,16 @@ var guessesLeft = 9;
 //FUNCTIONS
 //============================================================
 
+function startGame () {
+    selectedWord =wordOptions[Math.floor(Math.random() * wordOptions.length)];
+    lettersinWord = selectedWord.split("");
+    numBlanks = lettersinWord.length;
+    //test / debugging
+    console.log(selectedWord);
+    console.log(lettersinWord);
+    console.log(numBlanks);
+}
+
 //MAIN PROCESS
 //============================================================
+startGame();
